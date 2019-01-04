@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Add to homescreen for Safari on iOS -->
+	<!-- 添加至主屏, 从主屏进入会隐藏地址栏和状态栏, 全屏(content="yes") -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <link rel="stylesheet" href="../../vendor/layui/css/layui.css">
+    <link rel="stylesheet" href="../../vendor/layui/css/layui.mobile.css">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/index.css" />
+    <link rel="stylesheet" href="../../styles/intoLiJiang.css" />
+    <title>走进丽江详情页</title>
+</head>
+<body>
+    <div class="topbar flex-row height60 bg-white">
+        <div>
+            <span class="layui-icon layui-icon-left font20" onclick="back()"></span>
+        </div>
+        <div class="full-width txt-align-center">
+            <span class="font18">走进丽江</span>
+        </div>
+    </div>
+    <div class="content" style="bottom: 0;background: white;">
+    	<div class="content-header">
+    		<h3>拉市海一日游</h3>
+	    	<div class="content-header-title">
+	    		<div class="author">
+	    			<img src="../../images/portrait-icon.png" />
+	    			<label style="color: #666666;">张大大</label>
+	    		</div>
+	    		<div class="browse-volume">
+	    			<span>12326</span>
+	    			<label style="color: #999999;">浏览</label>
+	    		</div>
+	    	</div>
+	    	<P>2018-12-31 12:35:26</P>
+    	</div>
+    	<div class="content-body">
+    		<P>茶马古道源于古代西南边疆的茶马互市，以马帮为主要交通工具的民间国际商贸通道，是中国西南民族经济文化交流的走廊；
+    			兴于唐宋，盛于明清，二战中后期最为兴盛。茶马古道分陕甘、陕康藏、滇藏大概路，连接川滇藏，延伸入不丹、锡金、尼泊尔、印度境内，直到抵达西亚、 西非红海海岸。
+    		</P>
+    		<img src="../../images/index-carousel02.png" />
+    		<P>
+    			当我们现在提起川、藏、滇地区时，浮现在我们脑海中的是云南的普洱茶、代表纯洁爱情的玉龙雪山、景色迷人的丽江、世界屋脊青藏高原……我们会惊叹于大自然的鬼斧神工。
+    			但是，当我们看到连接横断山脉与喜马拉山脉的茶马古道时，我们又会赞叹古代人们的智慧。"茶马古道"，一个动听的名字，也是我国西南地区汉藏联系的通道。
+    			在英语中，这条商路更是被称作"Asian Corridor In Heaven",亚洲的天堂走廊。
+    		</P>
+    	</div>
+    	<!--文章点赞-->
+    	<div class="fixed-left-parise">
+    		<img src="../../images/parise.png" style="position: absolute;"/>
+    		<span>66</span>
+    	</div>
+    	<!--回到顶部-->
+	    <div class="fixed-right-backTop">
+	    	<img src="../../images/index-footer.png" style="display: none" />
+	    </div>
+    </div>
+</body>
+<script src="../../scripts/rem.js"></script>
+<script src="../../vendor/jquery.js"></script>
+<script src="../../vendor/layui/layui.js"></script>
+<script src="../../vendor/layer_mobile/layer.js"></script>
+<script src="../../scripts/common.js"></script>
+<script src="../../scripts/comlisdesc.js"></script>
+<script src="../../scripts/index.js"></script>
+<script>
+		//返回顶部按钮
+		var tabsHeight = $(".content-header").offset().top;
+		$(document).on("scroll", function () {
+		    var $scrollTop = $(document).scrollTop();
+		    //滚动距离超过tab元素到文档顶部的距离时显示返回顶部按钮
+		    alert($scrollTop)
+            if($scrollTop > tabsHeight){
+            	$(".fixed-right-backTop>img").show();
+            }else{
+            	$(".fixed-right-backTop>img").hide();
+            }
+		})
+    	
+		//返回顶部
+		$('.fixed-right-backTop').click(function () {
+		    $('body,html').animate({
+		        scrollTop: '0px'
+		    }, 500);
+		});
+</script>
+</html>

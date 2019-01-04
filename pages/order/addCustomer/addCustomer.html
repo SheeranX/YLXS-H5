@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../vendor/layui/css/layui.css">
+    <link rel="stylesheet" href="../../../vendor/layui/css/layui.mobile.css">
+    <link rel="stylesheet" href="../../../styles/global.css">
+    <link rel="stylesheet" href="addCustomer.css">
+    <title>添加客户</title>
+</head>
+
+<body>
+    <div class="topbar flex-row height60 bg-white">
+        <div>
+            <span class="layui-icon layui-icon-left font20" onclick="back()"></span>
+        </div>
+        <div class="full-width txt-align-center">
+            <span class="font18">新增常用联系人</span>
+        </div>
+    </div>
+    <form action="">
+        <div class="content">
+            <div class="flex-column">
+                <div class="flex-row bg-white padding-between margin-top10 height60">
+                    <label class="width80">姓名</label>
+                    <input type="text" class="mobile-input" placeholder="请输入游客姓名">
+                </div>
+                <div class="flex-row space-between bg-white padding-between margin-top10 height60" id="idcard">
+                    <div class="flex-row">
+                        <label class="width80">证件类型</label>
+                        <input type="text" class="mobile-input" placeholder="身份证" readonly id="cardType">
+                    </div>
+                    <span class="layui-icon layui-icon-right"></span>
+                </div>
+                <div class="flex-row bg-white padding-between height60">
+                    <label class="width80">证件号</label>
+                    <input type="text" class="mobile-input" placeholder="请输入证件号">
+                </div>
+                <div class="flex-row bg-white padding-between margin-top10 height60">
+                    <label class="width80">手机号</label>
+                    <input type="tel" class="mobile-input" placeholder="请输入手机号">
+                </div>
+                <div class="flex-row height60 space-between  bg-white padding-between margin-top10">
+                    <label class="width80">面部拍照</label>
+                    <span class="layui-icon layui-icon-username font20"></span>
+                </div>
+                <div class="flex-row margin-top50 padding-between">
+                    <button class="layui-btn layui-btn-danger layui-btn-radius layui-btn-fluid">确定</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script src="../../../scripts/rem.js"></script>
+    <script src="../../../vendor/jquery.js"></script>
+    <script src="../../../vendor/layui/layui.js"></script>
+    <script src="../../../vendor/layer_mobile/layer.js"></script>
+    <script src="../../../scripts/common.js"></script>
+    <script src="../../../pages/order/order.js"></script>
+    <script>
+        $('#idcard').click(function(){
+            toast.dialog('cardType',[{id:'a1',name:'学生卡'},{id:"a2",name:'老年卡'}]);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Add to homescreen for Safari on iOS -->
+	<!-- 添加至主屏, 从主屏进入会隐藏地址栏和状态栏, 全屏(content="yes") -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <link rel="stylesheet" href="../../vendor/layui/css/layui.css">
+    <link rel="stylesheet" href="../../vendor/layui/css/layui.mobile.css">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/my.css">
+    <title>评价详情</title>
+   	 
+</head>
+<body>
+	<div class="topbar flex-row height60 bg-white">
+        <div>
+            <span class="layui-icon layui-icon-left font20" onclick="back()"></span>
+        </div>
+        <div class="full-width txt-align-center">
+            <span class="font18">评价详情</span>
+        </div>
+    </div>
+    <div class="content" style="top: 0.4rem;background: #ededf6;">
+    	<div class="myEvaluateDetail">
+    		<div class="myEvaluateDetail-header">
+    			<P style="color: #209EF6;">济南野生动物世界年卡</P>
+    			<span>成人年卡</span>
+    		</div>
+    		<div style="height: 0.1rem;"></div>
+    		<!--详情内容-->
+    		<div class="myEvaluateDetail-body">
+    			<!--导游安排-->
+    			<div>
+    				<label>导游安排：</label>
+    				<div id="arrangement1"></div>
+    				<span>满意</span>
+    			</div>
+    			<!--行程安排-->
+    			<div>
+    				<label>行程安排：</label>
+    				<div id="arrangement2"></div>
+    				<span>非常满意</span>
+    			</div>
+    			<!--餐饮住宿-->
+    			<div>
+    				<label>餐饮住宿：</label>
+    				<div id="arrangement3"></div>
+    				<span>一般</span>
+    			</div>
+    			<!--旅游交通-->
+    			<div>
+    				<label>旅游交通：</label>
+    				<div id="arrangement4"></div>
+    				<span>不太满意</span>
+    			</div>
+    		</div>
+    		<div style="height: 0.1rem;"></div>
+    		<div class="myEvaluateDetail-form">
+    			<textarea placeholder="请在这里点评"></textarea>
+    			<input type="file" /><br />
+    			<label style="color: #999999;margin-left: 0.08rem;">添加图片</label>
+    		</div>
+    		<div>
+	    		<button id="comment" type="button">发表评论</button>
+	    	</div>
+    	</div>
+    	<div style="height: 0.1rem;"></div>
+    </div>	
+    <script src="../../scripts/rem.js"></script>
+    <script src="../../vendor/jquery.js"></script>
+    <script src="../../vendor/layui/layui.js"></script>
+    <script src="../../vendor/layer_mobile/layer.js"></script>
+    <script src="../../scripts/common.js"></script>
+    <script>
+    	layui.use(['rate'], function(){
+		  var rate = layui.rate;
+		  //基础效果
+		  rate.render({
+		    elem: '#arrangement1',
+		    value:4,
+		    readonly: true,
+		    theme: '#FF7c43'
+		  })
+		  
+		  rate.render({
+		    elem: '#arrangement2',
+		    value:5,
+		    readonly: true,
+		    theme: '#FF7c43'
+		  })
+		  
+		   rate.render({
+		    elem: '#arrangement3',
+		    value:3,
+		    readonly: true,
+		    theme: '#FF7c43'
+		  })
+		  
+		  rate.render({
+		    elem: '#arrangement4',
+		    value:2,
+		    readonly: true,
+		    theme: '#FF7c43'
+		  })
+		})  
+    </script>
+</body>
+</html>

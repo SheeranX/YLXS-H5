@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品列表页面</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../vendor/layui/css/layui.css">
+    <link rel="stylesheet" href="../../../styles/comlisdesc.css">
+    <link rel="stylesheet" href="../../../styles/global.css">
+</head>
+<body>
+<!--顶部导航、筛选-->
+<div class="topbar height60 flex-row bg-white" style="z-index: 99;">
+    <div>
+        <span class="layui-icon layui-icon-left font20" onclick="back()"></span>
+    </div>
+    <div class="goodsList-sortable flex-row space-around font14">
+        <span id="AISortable" class="sortable-active" >智能排序 </span>
+        <span>人气</span>
+        <span>评分</span>
+        <span id="sortFilter" class="sortFilter">筛选
+            <label>&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        </span>
+    </div>
+</div>
+<!--筛选下拉框-->
+<div class="goodsList-sortable-content slideFlg">
+    <div class="goodsList-sortable-content-box">
+        <div class="goodsList-sortable-item">
+            <div class="font12">
+                <h4 class="font14">星级</h4>
+                <span>五星级/豪华型</span>
+                <span>四星级/品质型</span>
+                <span>三星级/舒适型</span>
+                <span>二星级/简约型</span>
+                <span>其他/其他</span>
+            </div>
+        </div>
+        <div class="goodsList-sortable-item">
+            <div class="font12">
+                <h4 class="font14">价格区间</h4>
+                <span>￥400以下</span>
+                <span>￥401-800</span>
+                <span>￥801-1200</span>
+                <span>￥1201-1600</span>
+                <span>￥2000以上</span>
+            </div>
+        </div>
+        <div class="goodsList-sortable-item">
+            <div class="font12">
+                <h4 class="font14">特色</h4>
+                <div>
+                    <span>公寓</span>
+                    <span>客栈</span>
+                    <span>民居</span>
+                    <span>别墅</span>
+                    <span>青年旅社</span>
+                    <span>纳西风情</span>
+                    <span>休闲度假</span>
+                    <span>亲子酒店</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="goodsList-sortable-item-btnGroup flex-row space-around font14">
+        <a href="javascript:;" class="sortable-resetBtn">重置</a>
+        <a href="javascript:;" class="sortable-completeBtn">完成</a>
+    </div>
+</div>
+<!--筛选遮罩-->
+<div class="goodsList-container-cover"></div>
+
+<!--列表项-->
+<div class="goodsList-container flow-default" id="goodsList-container">
+    <div class="goodsList-list" style="display: none">
+        <div class="goodsList-list-item" onclick="window.location.href='hotelDetail.html'">
+            <img src="../../../images/hotel.jpg" alt="">
+            <div class="list-item-right">
+                <h3 class="font16">丽江金茂凯悦酒店</h3>
+                <p class="font14">距离我0.3km</p>
+                <div><span>￥</span><span class="font16">193</span><span class="font14 disabled">&nbsp;&nbsp;起</span>
+                    <del class="font14">￥150</del>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script src="../../../scripts/rem.js"></script>
+<script src="../../../vendor/jquery.js"></script>
+<script src="../../../vendor/layui/layui.js"></script>
+<script src="../../../vendor/layer_mobile/layer.js"></script>
+<script src="../../../scripts/comlisdesc.js"></script>
+<script src="../../../scripts/common.js"></script>
+
+</body>
+</html>

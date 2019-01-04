@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>门票列表页面</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../vendor/layui/css/layui.css">
+    <link rel="stylesheet" href="../../../styles/comlisdesc.css">
+    <link rel="stylesheet" href="../../../styles/global.css">
+</head>
+<body>
+<!--顶部导航、筛选-->
+<div class="topbar height60 flex-row bg-white" style="z-index: 99;">
+    <div>
+        <span class="layui-icon layui-icon-left font20" onclick="back()"></span>
+    </div>
+    <div class="goodsList-sortable flex-row space-around font14">
+        <span id="AISortable" class="sortable-active" >智能排序</span>
+        <span>人气</span>
+        <span>评分</span>
+        <span id="sortFilter" class="sortFilter">筛选
+            <label>&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        </span>
+    </div>
+</div>
+<!--筛选下拉框-->
+<div class="goodsList-sortable-content slideFlg">
+    <div class="goodsList-sortable-content-box">
+        <div class="goodsList-sortable-item">
+            <div class="font12">
+                <h4 class="font14">目的地</h4>
+                <span style="width: 0.85rem;">古城区</span>
+                <span style="width: 0.85rem;">玉龙纳西族自治区</span>
+                <span style="width: 0.85rem;">宁蒗彝族自治区</span>
+            </div>
+        </div>
+        <div class="goodsList-sortable-item">
+            <div class="font12">
+                <h4 class="font14">主题</h4>
+                <span>古迹遗址</span>
+                <span>水乡古镇</span>
+                <span>骑行</span>
+                <span>湖光山色</span>
+                <span>民俗风情</span>
+                <span>赛事演出</span>
+                <span>温泉</span>
+                <span>宗教乐园</span>
+            </div>
+        </div>
+        <div class="goodsList-sortable-item">
+            <div class="font12">
+                <h4 class="font14">使用日期</h4>
+                <div>
+                    <span>可定今日票</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="goodsList-sortable-item-btnGroup flex-row space-around font14">
+        <a href="javascript:;" class="sortable-resetBtn">重置</a>
+        <a href="javascript:;" class="sortable-completeBtn">完成</a>
+    </div>
+</div>
+<!--筛选遮罩-->
+<div class="goodsList-container-cover"></div>
+
+<!--列表项-->
+<div class="goodsList-container flow-default" id="goodsList-container">
+    <div class="goodsList-list" style="display: none">
+        <div class="goodsList-list-item" onclick="window.location.href='ticketsDetail.html'">
+            <img src="../../../images/ticket.jpg" alt="">
+            <div class="list-item-right">
+                <h3 class="font16">玉龙雪山</h3>
+                <p class="font14">距我0.8km</p>
+                <div><span>￥</span><span class="font16">998</span><span class="font14 disabled">&nbsp;&nbsp;起</span>
+                    <del class="font14">￥1300</del>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="../../../scripts/rem.js"></script>
+<script src="../../../vendor/jquery.js"></script>
+<script src="../../../vendor/layui/layui.js"></script>
+<script src="../../../vendor/layer_mobile/layer.js"></script>
+<script src="../../../scripts/comlisdesc.js"></script>
+<script src="../../../scripts/common.js"></script>
+
+</body>
+</html>

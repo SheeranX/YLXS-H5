@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Add to homescreen for Safari on iOS -->
+	<!-- 添加至主屏, 从主屏进入会隐藏地址栏和状态栏, 全屏(content="yes") -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <link rel="stylesheet" href="../vendor/layui/css/layui.css">
+    <link rel="stylesheet" href="../vendor/layui/css/layui.mobile.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/intoLiJiang.css" />
+    <title>走进丽江</title>
+</head>
+<body>
+    <div class="topbar flex-row height60 bg-white">
+        <div>
+            <span class="layui-icon layui-icon-left font20" onclick="back()"></span>
+        </div>
+        <div class="full-width txt-align-center">
+            <span class="font18">走进丽江</span>
+        </div>
+    </div>
+    <div class="content" style="bottom: 0;">
+    	<!--tab列表-->
+    	<div class="intoLiJiang-tab flex-row space-around font14">
+    		<span>玉龙雪山</span>
+    		<span>印象丽江</span>
+    		<span>酒吧客栈</span>
+    		<span class="intoLiJiang-tab-active">历史文化</span>
+    		<span>周边旅游</span>
+    	</div>
+    	<div class="intoLiJiang-item" style="width:90%;padding: 0 5%;">
+    		<!--tab列表内容-->
+    		<li class="intoLiJiang-list1" onclick="window.location.href=''" >
+	    		<h3 style="margin: 0.1rem 0;">玉龙雪山</h3>
+	    		<div class="img-item" style="position: relative;cursor: pointer;">
+	    			<img src="../images/ticket.jpg"  style="width: 100%;height: 2rem;border-radius: 0.05rem;"/>
+	    			<span style="position: absolute;display: block;height: 0.6rem;text-align: left;bottom: 0;left: 0;border-bottom-right-radius:0.05rem;border-bottom-left-radius:0.05rem;background: #333;opacity: 0.7;color: white;padding: 0.1rem;text-indent: 2em;">
+	    				丽江是中国少数民族纳西族的主要聚居地，也是唯一一个纳西族自治县，她是云南省独具特色的旅游胜地...
+	    			</span>
+	    		</div>
+	    	</li>
+	    	<li class="intoLiJiang-list2" onclick="window.location.href=''" >
+	    		<h3 style="margin: 0.1rem 0;">印象丽江</h3>
+	    		<div class="img-item" style="position: relative;cursor: pointer;">
+	    			<img src="../images/nxz.jpg"  style="width: 100%;height: 2rem;border-radius: 0.05rem;"/>
+	    			<span style="position: absolute;display: block;height: 0.6rem;text-align: left;bottom: 0;left: 0;border-bottom-right-radius:0.05rem;border-bottom-left-radius:0.05rem;background: #333;opacity: 0.7;color: white;padding: 0.1rem;text-indent: 2em;">
+	    				丽江是中国少数民族纳西族的主要聚居地，也是唯一一个纳西族自治县，她是云南省独具特色的旅游胜地...
+	    			</span>
+	    		</div>
+	    	</li>
+	    	<li class="intoLiJiang-list3" onclick="window.location.href=''" >
+	    		<h3 style="margin: 0.1rem 0;">酒吧客栈</h3>
+	    		<div class="img-item" style="position: relative;cursor: pointer;">
+	    			<img src="../images/foodStreet.jpg"  style="width: 100%;height: 2rem;border-radius: 0.05rem;"/>
+	    			<span style="position: absolute;display: block;height: 0.6rem;text-align: left;bottom: 0;left: 0;border-bottom-right-radius:0.05rem;border-bottom-left-radius:0.05rem;background: #333;opacity: 0.7;color: white;padding: 0.1rem;text-indent: 2em;">
+	    				丽江是中国少数民族纳西族的主要聚居地，也是唯一一个纳西族自治县，她是云南省独具特色的旅游胜地...
+	    			</span>
+	    		</div>
+	    	</li>
+	    	<li class="intoLiJiang-list4 intoLiJiang-content-active" onclick="window.location.href=''" >
+	    		<h3 style="margin: 0.1rem 0;">历史文化</h3>
+	    		<div class="img-item" style="position: relative;cursor: pointer;">
+	    			<img src="../images/dbwh.jpg"  style="width: 100%;height: 2rem;border-radius: 0.05rem;"/>
+	    			<span style="position: absolute;display: block;height: 0.6rem;text-align: left;bottom: 0;left: 0;border-bottom-right-radius:0.05rem;border-bottom-left-radius:0.05rem;background: #333;opacity: 0.7;color: white;padding: 0.1rem;text-indent: 2em;">
+	    				丽江是中国少数民族纳西族的主要聚居地，也是唯一一个纳西族自治县，她是云南省独具特色的旅游胜地...
+	    			</span>
+	    		</div>
+	    	</li>
+	    	<li class="intoLiJiang-list5" onclick="window.location.href=''" >
+	    		<h3 style="margin: 0.1rem 0;">周边旅游</h3>
+	    		<div class="img-item" style="position: relative;cursor: pointer;">
+	    			<img src="../images/line.jpeg"  style="width: 100%;height: 2rem;border-radius: 0.05rem;"/>
+	    			<span style="position: absolute;display: block;height: 0.6rem;text-align: left;bottom: 0;left: 0;border-bottom-right-radius:0.05rem;border-bottom-left-radius:0.05rem;background: #333;opacity: 0.7;color: white;padding: 0.1rem;text-indent: 2em;">
+	    				丽江是中国少数民族纳西族的主要聚居地，也是唯一一个纳西族自治县，她是云南省独具特色的旅游胜地...
+	    			</span>
+	    		</div>
+	    	</li>
+    	</div>
+    </div>
+</body>
+<script src="../scripts/rem.js"></script>
+<script src="../vendor/jquery.js"></script>
+<script src="../vendor/layui/layui.js"></script>
+<script src="../vendor/layer_mobile/layer.js"></script>
+<script src="../scripts/common.js"></script>
+<script src="../scripts/comlisdesc.js"></script>
+<script src="../scripts/index.js"></script>
+<script>
+	$(function(){
+		//tab列表
+		$(".intoLiJiang-tab span").each(function(i){
+			$(".intoLiJiang-tab span").eq(i).click(function(){
+				$(".intoLiJiang-tab span").eq(i).addClass("intoLiJiang-tab-active").siblings().removeClass("intoLiJiang-tab-active");	
+				$(".intoLiJiang-item li").eq(i).addClass("intoLiJiang-content-active").siblings().removeClass("intoLiJiang-content-active")
+			})
+		})
+	})
+</script>
+</html>

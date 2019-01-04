@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../vendor/layui/css/layui.css">
+    <link rel="stylesheet" href="../vendor/layui/css/layui.mobile.css">
+    <link rel="stylesheet" href="../styles/global.css">
+    <title>玉龙雪山</title>
+</head>
+<body>
+    <div>
+      <button id="loading" class="">loading</button>
+      <button id="success">success</button>
+      <button id="warning">warning</button>
+      <button id="danger">danger</button>
+      <button id="layer">layer</button>
+    </div>
+    <script src="../scripts/rem.js"></script>
+    <script src="../vendor/jquery.js"></script>
+    <script src="../vendor/layui/layui.js"></script>
+    <script src="../vendor/layer_mobile/layer.js"></script>
+    <script src="../scripts/common.js"></script>
+    <script>
+        $(function(){
+            $('#loading').click(function(){
+                toast.loading();
+            });
+
+            $('#success').click(function(){
+                toast.success('啊实打实上的');
+            });
+            $('#warning').click(function(){
+                toast.warning('asdasd');
+            });
+            $('#danger').click(function(){
+                toast.error("asefsadfasdf");
+            });
+            $('#layer').click(function(){
+                var html = "asdasd";
+                var pageii = layer.open({
+                     type: 1
+                    ,content:html
+                    ,anim: 'up'
+                    ,style: 'position:fixed; left:0; top:0; width:100%; height:100%; border: none; -webkit-animation-duration: .5s; animation-duration: .5s;'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

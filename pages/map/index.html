@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scaleble = no,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- 仅针对IOS的Safari顶端状态条的样式（可选default/black/black-translucent ） -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <script src="../../scripts/rem.js"></script>
+    <link rel="stylesheet" href="../../vendor/layui/css/layui.css">
+    <!-- <link rel="stylesheet" href="../../vendor/layer_mobile/need/layer.css"> -->
+    <link rel="stylesheet" href="../../vendor/APlayer/APlayer.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.2/css/swiper.min.css">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+	<div class="topbar flex-row height60 bg-white">
+        <div>
+            <span class="layui-icon layui-icon-left font20" onclick="back()"></span>
+        </div>
+        <div class="full-width txt-align-center">
+            <span class="font18">导航导览</span>
+        </div>
+    </div>
+    <div id="allmap"></div>
+    <div class="container"> 
+        <!-- 景点详情 -->
+        <div class="modal flex-row">
+             <span class="icon-close"><i class="layui-icon layui-icon-close font14"></i></span>
+            <div class="modal-img">
+                <img src="../../images/zz.jpg" alt="">
+            </div>
+            <div class="flex-column">
+                <div class="modal-title font16"><strong>西大门游客中心</strong></div>
+                <div class="modal-content font14">
+                    <p>西大门游客.find中心西大门游客中心西大门游客中心西大门游客中心西大门游客中心西大门游客中心大门游客中心西大门游客中心</p>
+                </div>
+                <div class="modal-footer flex-row padding-top">
+                    <button class="layui-btn layui-btn-xs">解说</button>
+                    <button class="layui-btn layui-btn-xs">导航</button>
+                    <button class="layui-btn layui-btn-xs" onclick="details()">详情</button>
+                </div>
+            </div>
+        </div>
+        <!-- 语音解说轮播 -->
+        <div class="swiper-box">
+            <div class="swiper-container">
+                <div class="swiper-wrapper"></div>
+            </div>
+        </div>
+        <!-- 底部导航栏 -->
+        <div class="bottom-bar flex-row space-between">
+            <div class="swiper-nav height60 nav-bar">
+                <div class="swiper-wrapper" id="navBar"></div>
+            </div>
+            <div class="collapse height60 bg-white">
+                <span class="layui-icon layui-icon-down"></span>
+            </div>
+        </div>
+        <!-- 景点内容 -->
+        <div class="nav-item-content"></div>
+        <!-- 顶部语音播报 -->
+        <div class="broadcast flex-row">
+           <div class="audio" id="audio"></div>
+           <div class="padding-between audio-title font12">优胜美地国家森林公园</div>
+        </div>
+    </div>
+    <script src="../../vendor/jquery.js"></script>
+    <script src="https://api.map.baidu.com/api?v=3.0&ak=2gTu0W1N2vcDt1tciwSqXqjLaf79THqa"></script>
+    <script src="../../vendor/layui/layui.js"></script>
+    <script src="../../vendor/layer_mobile/layer.js"></script>
+    <script src="../../vendor/APlayer/APlayer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.2/js/swiper.min.js"></script>
+    <script src="../../scripts/common.js"></script>
+    <script src="index.js"></script>
+</body>  
+</html>

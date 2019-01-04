@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Add to homescreen for Safari on iOS -->
+	<!-- 添加至主屏, 从主屏进入会隐藏地址栏和状态栏, 全屏(content="yes") -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <link rel="stylesheet" href="../../vendor/layui/css/layui.css">
+    <link rel="stylesheet" href="../../vendor/layui/css/layui.mobile.css">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/index.css" />
+    <link rel="stylesheet" href="../../styles/intoLiJiang.css" />
+    <title>旅游攻略</title>
+    
+</head>
+<body>
+    <div class="topbar flex-row height60 bg-white">
+        <div>
+            <div class="layui-icon layui-icon-left font20" onclick="back()"></div>
+        </div>
+        <div class="full-width txt-align-center">
+            <div class="font18">写游记</div>
+        </div>
+    </div>
+    <div class="content" style="padding: 0 0.15rem;background: white;">
+    	<!--游记封面-->
+    	<div class="travelNotes-cover">
+    		<!--<input type="file" placeholder="添加游记封面" />-->
+    	</div>
+    	<!--游记标题-->
+    	<div class="travelNotes-title">
+    		<input type="text" placeholder="输入游记标题">
+    			
+    		</input>
+    	</div>
+    	<!--目的地-->
+    	<div class="travelNotes-destination">
+    		<label>目的地：</label>
+    		<div class="destination-item">
+    			<span class="destination-item-active">玉龙雪山</span>
+    			<span>印象丽江</span>
+    			<span>泸沽湖</span>
+    			<span>拉市海</span>
+    		</div>
+    	</div>
+    	<!--输入正文-->
+    	<div class="travelNotes-article">
+    		
+    	</div>
+    	<!--关键词-->
+    	<div class="travelNotes-keyword">
+    		<label>关键词：</label>
+    		<div class="keyword-item">
+    			<span class="keyword-item-active">穷游</span>
+    			<span class="keyword-item-active">骑行</span>
+    			<span>自驾</span>
+    			<span>美食</span>
+    			<span>品质游</span>
+	    		<span>跟团</span>
+	    		<span class="keyword-item-active">住宿</span>
+	    		<span>自由行</span>
+    		</div>		
+    	</div>
+    </div>	
+    <!--底部发表栏-->
+    <div class="travelNotes-publish flex-row space-between">
+    	<div class="imgArticle">
+    		<img src="../../images/img-upload.png" />
+    		<img class="img" src="../../images/article-upload.png" />
+    	</div>
+    	<span id="publish">发表</span>
+    </div>	
+    <script src="../../scripts/rem.js"></script>
+    <script src="../../vendor/jquery.js"></script>
+    <script src="../../vendor/layui/layui.js"></script>
+    <script src="../../vendor/layer_mobile/layer.js"></script>
+    <script src="../../scripts/common.js"></script>
+    <script src="../../scripts/index.js"></script>
+    <script src="../../scripts/comlisdesc.js"></script>
+   	<script type="text/javascript" src="../../Eleditor-master/Eleditor.js" ></script>
+   	<script type="text/javascript" src="../../Eleditor-master/Eleditor.min.js" ></script>
+   	<script type="text/javascript" src="../../Eleditor-master/jquery.min.js" ></script>
+   	<script type="text/javascript" src="../../Eleditor-master/webuploader.min.js" ></script>
+    <script>
+    	$(function(){
+    		//目的地选择
+    		$(".destination-item span").click(function(){
+    			$(this).addClass("destination-item-active").siblings().removeClass("destination-item-active");
+    		})
+    		
+    		//目关键词激活
+    		$(".keyword-item span").click(function(){
+    			if($(this).hasClass("keyword-item-active")){
+    				$(this).removeClass("keyword-item-active");
+    			}else{
+    				$(this).addClass("keyword-item-active");
+    			}
+    		})
+    	})
+    	
+    	var artEditor = new Eleditor({
+			el: '.travelNotes-cover',
+		    upload:{
+		        server: '/upload.php',//后台接收地址
+		        fileSizeLimit: 2,//限制文件上传大小为2M
+		        formName: 'image',//设置文件name,
+		        accept: {//accept一般不用设置
+		            title: 'Images', 
+		            extensions: 'gif,jpg,jpeg,bmp,png,webp',
+		            mimeTypes: 'image/gif,image/jpg,image/jpeg,image/bmp,image/png,image/webp'
+		        }
+		    }
+		});
+		var artEditor = new Eleditor({
+			el: '.travelNotes-article',
+		    upload:{
+		        server: '/upload.php',//后台接收地址
+		        fileSizeLimit: 2,//限制文件上传大小为2M
+		        formName: 'image',//设置文件name,
+		        accept: {//accept一般不用设置
+		            title: 'Images', 
+		            extensions: 'gif,jpg,jpeg,bmp,png,webp',
+		            mimeTypes: 'image/gif,image/jpg,image/jpeg,image/bmp,image/png,image/webp'
+		        }
+		    }
+		});
+    </script>
+</body>
+</html>

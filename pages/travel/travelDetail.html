@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Add to homescreen for Safari on iOS -->
+	<!-- 添加至主屏, 从主屏进入会隐藏地址栏和状态栏, 全屏(content="yes") -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <link rel="stylesheet" href="../../vendor/layui/css/layui.css">
+    <link rel="stylesheet" href="../../vendor/layui/css/layui.mobile.css">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/index.css" />
+    <link rel="stylesheet" href="../../styles/intoLiJiang.css" />
+    <title>旅游攻略</title>
+</head>
+<body>
+    <div class="topbar flex-row height60 bg-white">
+        <div>
+            <span class="layui-icon layui-icon-left font20" onclick="back()"></span>
+        </div>
+        <div class="full-width txt-align-center">
+            <span class="font18">游记详情</span>
+        </div>
+    </div>
+    <div class="content" style="bottom: 0;background: white;">
+    	<div class="content-header">
+    		<h3>拉市海一日游</h3>
+	    	<div class="author" style="margin: 0.2rem 0;">
+	    		<img src="../../images/portrait-icon.png" />
+	    		<label style="color: #666666;">张大大</label>
+	    	</div>
+	    	<div style="color: #999999;">2018-12-31 12:35:26</div>
+	    	<div class="travel-type">
+	    		<div class="type-item">
+	    			<img src="../../images/travel.png" />
+	    			<label>穷游</label>
+	    		</div>
+	    		<div class="type-item">
+	    			<img src="../../images/delicious.png" />
+	    			<label>美食</label>
+	    		</div>
+	    		<div class="type-item">
+	    			<img src="../../images/shop.png" />
+	    			<label>购物</label>
+	    		</div>
+	    	</div>
+	    	<div class="travels-comment">
+	    		<div class="travels-comment-item">
+	    			<span>312</span>
+	    			<label>喜欢</label>
+	    		</div>
+	    		<div class="travels-comment-item">
+	    			<span>558</span>
+	    			<label>评论</label>
+	    		</div>
+	    		<div class="travels-comment-item">
+	    			<span>31245</span>
+	    			<label>浏览</label>
+	    		</div>
+	    	</div>
+    	</div>
+    	<div class="content-body">
+    		<img src="../../images/ylxs06.jpg" />
+    		<P>
+    			玉龙雪山为云南省丽江市境内雪山群，地处东经100°4′2″～100°16′30″、北纬27°3′2″～27°18′57″之间，在丽江北面约15千米处，全长75千米，
+    			是北半球最近赤道终年积雪的山脉，隔江西与中甸雪山、东与绵绵山相并列，北自三江口，向南延伸到北纬27°，如扇面向古城展开。全山的13座山峰由南向北纵向排列，
+    			主峰扇子陡最高处海拔5596米，终年积雪，发育有亚欧大陆距离赤道最近的温带海洋性冰川。其十三座雪峰连绵不绝，宛若一条“巨龙”腾越飞舞，故称为“玉龙”。
+    			又因其岩性主要为石灰岩与玄武岩，黑白分明，所以又称为“黑白雪山”。是纳西人的神山，传说纳西族保护神“三多”的化身。
+    		</P>
+    	</div>
+    	<!--点赞与评论-->
+    	<div class="fixed-left-comment">
+    		<img class="parise-img" src="../../images/parise.png"/>
+    		<span class="parise-span">32</span>
+    		<img class="message-img" src="../../images/message.png" onclick="window.location.href='travelComment.html'"/>
+    		<span class="message-span">66</span>
+    	</div>
+    	<!--回到顶部-->
+	    <!--<div class="fixed-right-backTop">
+	    	<img src="../../images/index-footer.png" style="display: block;" />
+	    </div>-->
+    </div>
+</body>
+<script src="../../scripts/rem.js"></script>
+<script src="../../vendor/jquery.js"></script>
+<script src="../../vendor/layui/layui.js"></script>
+<script src="../../vendor/layer_mobile/layer.js"></script>
+<script src="../../scripts/common.js"></script>
+<script src="../../scripts/comlisdesc.js"></script>
+<script src="../../scripts/index.js"></script>
+</html>

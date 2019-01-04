@@ -1,0 +1,129 @@
+body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
+.map-container{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 800px;
+    height: 800px;
+}
+.container{
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    width: 100%;
+}
+.modal{
+    background: rgba(255,255 , 255, 0.9);
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 0.05rem;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    height: 0;
+    width: 3rem;
+}
+
+.modal-img{
+    height: 1rem;
+    width: 1rem;
+    padding-right: 0.1rem;
+}
+.modal-img img{
+   height: 1rem;
+   width: 1rem;
+}
+.modal .flex-column{
+    height: 1rem;
+    padding: 0.05rem 0;
+}
+.bottom-bar{
+    border-bottom: 1px solid #ccc;
+    z-index: 999;
+}
+.nav-bar{
+    width: 90%;
+    background: rgba(255,255 , 255, 0.9);
+}
+.nav-bar div{
+    height: 100%;
+}
+.collapse{
+    width: 10%;
+    background: rgba(255,255 , 255, 0.9);
+    border-left: 1px solid #ccc;
+    text-align: center;
+    line-height: 0.6rem;
+    position: relative;
+    z-index: 999;
+}
+.icon-close{
+    position: absolute;
+    width: 0.2rem;
+    height: 0.2rem;
+    top: 0;
+    right: 0;
+    color: #fff;
+    background: #009688;
+    text-align: center;
+    line-height: 0.2rem;
+}
+.modal-content{
+    display: -webkit-box;    
+    -webkit-box-orient: vertical;    
+    -webkit-line-clamp: 2;    
+    overflow: hidden; 
+}
+.nav-item-content{
+    background: rgba(255,255 , 255, 0.9);
+    display: none;
+    height: 1.5rem;
+    overflow: scroll;
+}
+.nav-item-content ul li{
+    height: 0.4rem;
+    padding:0 0.1rem;
+    line-height: 0.4rem;
+}
+.active{
+    background: #fff;
+    color: #1E9FFF;
+}
+.tab-click{
+    color: #1E9FFF;
+}
+.item-title{
+    vertical-align: top;
+}
+.broadcast{
+    position: fixed;
+    top: 0.1rem;
+    width: 2rem;
+    background: rgba(255,255 , 255, 0.9);
+    border-radius: 0.05rem;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    top: -10rem;
+}
+.audio-title{
+    width: 1rem;
+}
+.swiper-box{
+    width: 100%;
+    margin-bottom: 0.1rem;
+}
+.swiper-container{
+    height: 100%;
+}
+.swiper-slide .audio-title{
+    width: auto;
+}
+.swiper-slide .flex-row{
+    margin: 0 0.1rem;
+    overflow: hidden;
+    border-radius: 0.05rem;
+    box-shadow: 0px 0px 10px #000000;
+}

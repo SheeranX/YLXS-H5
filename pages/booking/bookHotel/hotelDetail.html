@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../vendor/layui/css/layui.css">
+    <link rel="stylesheet" href="../../../vendor/layui/css/layui.mobile.css">
+    <link rel="stylesheet" href="../../../styles/global.css">
+    <link rel="stylesheet" href="../../../styles/comlisdesc.css">
+        <link rel="stylesheet" href="../../order/order.css">
+</head>
+<body>
+<div class="topbar bg-white height60 flex-row">
+    <div>
+        <span class="layui-icon layui-icon-left font20" onclick="back()"></span>
+    </div>
+    <div class="full-width txt-align-center">
+        <span class="font18">商品详情</span>
+    </div>
+</div>
+<div class="goodsDetail-container">
+    <div class="goodsDetail-showImage">
+        <!--顶部图片展示-->
+        <img class="banner" src="../../../images/hotel.jpg" alt="">
+        <!--分享-->
+        <img class="share" src="../../../images/2X_03.png" alt="">
+    </div>
+
+    <div class="goodsDetail-header">
+        <!--标题-->
+        <div class="goodsDetail-header-item font14">
+            <h3>丽江金茂凯悦甄选酒店</h3>
+        </div>
+        <!--地址-->
+        <div class="goodsDetail-header-item font14">
+            <p><img src="../../../images/location-icon.png" alt="">丽江市玉龙县丽江古城15公里以外</p>
+            <span class="layui-icon layui-icon-right"></span>
+        </div>
+
+        <div class="goodsDetail-header-item-flex">
+            <div class="goodsDetail-header-item-left">
+                <span class="font14" onclick="window.location.href='hotelIntroduce.html'">酒店介绍</span>
+                <p class="font12">开放时间/优待政策</p>
+                <i class="layui-icon layui-icon-right"></i>
+            </div>
+            <div class="goodsDetail-header-item-right" onclick="window.location.href='./userComment.html'">
+                <span class="font14"><label class="goodComment font18">96.6%</label>好评率</span>
+                <p class="font12">来自1506位游客的真实点评</p>
+                <i class="layui-icon layui-icon-right"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="goodsDetail-body">
+        <!--产品列表、预定须知选项卡-->
+        <div class="goodDetail-body-tabs">
+            <ul>
+                <li class="goodDetail-body-tabs-active font16">产品列表</li>
+                <li class="font16">预定须知</li>
+            </ul>
+        </div>
+        <!--产品列表-->
+        <div class="goodDetail-tabs-content">
+            <ul>
+                <!--产品列表-->
+                <li class="goodDetail-tabs-content-active">
+                    <!--入住时间-->
+                    <div class="tabs-content-item-times">
+                        <p class="font16">9月26日 <span class="font14">周六入住</span></p>
+                        <p class="font16">9月27日 <span class="font14">周日离店</span></p>
+                        <a href="javascript:;">
+                            <span class="font14">共一晚</span>
+                            <i class="layui-icon layui-icon-right"></i>
+                        </a>
+                    </div>
+                    <!--列表项-->
+                    <div class="tabs-content-item">
+                        <span class="font16">豪华花园景观双床房(无早)</span>
+                        <span class="content-item-detail font14">详情 ></span>
+                        <p class="font14">无早 双床 有窗 不可退改</p>
+                        <span class="price font16">￥765</span>
+                        起
+                        <img src="../../../images/arrow-down.png" class="layui-icon layui-icon-up showFlg"/>
+                    </div>
+                    <!--列表展开-->
+                    <div class="content-item-container">
+                        <div class="tabs-content-item-desc">
+                            <div class="content-item-desc-left">
+                                <span class="font16">豪华花园景观双床房(无早)</span>
+                                <p class="font14">无早 双床 有窗 不可退改</p>
+                                <span class="font14 hotel-notice">预定须知 ></span>
+                            </div>
+                            <div class="content-item-desc-right">
+                                <span class="font16 price">￥765</span>
+                                <a class="layui-btn bookBtn layui-btn-sm" href="../bookHotel/hotelOrder.html">预定</a>
+                            </div>
+
+                        </div>
+                        <div class="tabs-content-item-desc">
+                            <div class="content-item-desc-left">
+                                <span class="font16">豪华花园景观双床房(无早)</span>
+                                <p class="font14">无早 双床 有窗 不可退改</p>
+                                <span class="font14 hotel-notice">预定须知 ></span>
+                            </div>
+                            <div class="content-item-desc-right">
+                                <span class="font16 price">￥765</span>
+                                <a class="layui-btn bookBtn-disabled layui-btn-sm" href="../bookHotel/hotelOrder.html">预定</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--列表项-->
+                    <div class="tabs-content-item">
+                        <span class="font16">豪华花园景观双床房(无早)</span>
+                        <span class="content-item-detail font14">详情 ></span>
+                        <p class="font14">无早 双床 有窗 不可退改</p>
+                        <span class="price font16">￥765</span>
+                        起
+                        <span class="font14 content-item-mark">满房</span>
+                        <img src="../../../images/arrow-down.png" class="layui-icon layui-icon-up showFlg"></img>
+                    </div>
+                    <!--列表展开-->
+                    <div class="content-item-container">
+                        <div class="tabs-content-item-desc">
+                            <div class="content-item-desc-left">
+                                <span class="font16">豪华花园景观双床房(无早)</span>
+                                <p class="font14">无早 双床 有窗 不可退改</p>
+                                <span class="font14 hotel-notice">预定须知 ></span>
+                            </div>
+                            <div class="content-item-desc-right">
+                                <span class="font16 price">￥765</span>
+                                <a class="layui-btn bookBtn layui-btn-sm">预定</a>
+                            </div>
+
+                        </div>
+                        <div class="tabs-content-item-desc">
+                            <div class="content-item-desc-left">
+                                <span class="font16">豪华花园景观双床房(无早)</span>
+                                <p class="font14">无早 双床 有窗 不可退改</p>
+                                <span class="font14 hotel-notice">预定须知 ></span>
+                            </div>
+                            <div class="content-item-desc-right">
+                                <span class="font16 price">￥765</span>
+                                <a class="layui-btn bookBtn-disabled layui-btn-sm">预定</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--列表项-->
+                    <div class="tabs-content-item">
+                        <span class="font16">豪华花园景观双床房(无早)</span>
+                        <span class="content-item-detail font14">详情 ></span>
+                        <p class="font14">无早 双床 有窗 不可退改</p>
+                        <span class="price font16">￥765</span>
+                        起
+                        <span class="font14 content-item-mark">满房</span>
+                        <img src="../../../images/arrow-down.png" class="layui-icon layui-icon-up showFlg">
+                    </div>
+                    <!--列表展开-->
+                    <div class="content-item-container">
+                        <div class="tabs-content-item-desc">
+                            <div class="content-item-desc-left">
+                                <span class="font16">豪华花园景观双床房(无早)</span>
+                                <p class="font14">无早 双床 有窗 不可退改</p>
+                                <span class="font14 hotel-notice">预定须知 ></span>
+                            </div>
+                            <div class="content-item-desc-right">
+                                <span class="font16 price">￥765</span>
+                                <button class="layui-btn bookBtn layui-btn-sm">预定</button>
+                            </div>
+
+                        </div>
+                        <div class="tabs-content-item-desc">
+                            <div class="content-item-desc-left">
+                                <span class="font16">豪华花园景观双床房(无早)</span>
+                                <p class="font14">无早 双床 有窗 不可退改</p>
+                                <span class="font14 hotel-notice">预定须知 ></span>
+                            </div>
+                            <div class="content-item-desc-right">
+                                <span class="font16 price">￥765</span>
+                                <button class="layui-btn bookBtn layui-btn-sm">预定</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </li>
+
+                <!--预定须知-->
+                <li>
+                    预定须知
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+<!--酒店详情弹窗-->
+<div class="detailModal">
+    <div class="detailModal-header">
+        <!--标题-->
+        <div class="detailModal-header-title">
+            <div class="font18">豪华乐园景观双床房</div>
+            <span class="price font18">￥768</span>
+            <span class="originPrice font14">门市价: <del>￥1000</del></span>
+        </div>
+        <!--标识-->
+        <div class="detailModal-header-iconList flex-row font14">
+            <span class="iconlist-item">
+                <span class="flex-row"><img src="../../../images/2X_93.png" alt=""></span>
+                <span>无早</span>
+            </span>
+            <span class="iconlist-item">
+                <span class="flex-row"><img src="../../../images/2X_93.png" alt=""></span>
+                <span>双床</span>
+            </span>
+            <span class="iconlist-item">
+                <span class="flex-row"><img src="../../../images/2X_93.png" alt=""></span>
+                <span>有窗</span>
+            </span>
+            <span class="iconlist-item">
+                <span class="flex-row"><img src="../../../images/2X_93.png" alt=""></span>
+                <span>不可退改</span>
+            </span>
+        </div>
+        <!--退款规则-->
+        <div class="detailModal-rules font14">
+            <div class="detailModal-rules-title">
+                <span>退款规则</span>
+            </div>
+            <div class="detailModal-rules-desc font14">
+                <div>
+                    <img src="../../../images/times-icon.png" alt="">
+                    <span class="cancleTime">限时取消</span>
+                    <span>
+                        入住当天18点前可免费取消，逾期不可取消/变更，如未入住，酒店将扣除全额房费
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!--使用规则-->
+        <div class="detailModal-detailContent-item font14">
+            <div class="detailModal-rules-title">
+                <span>使用规则</span>
+            </div>
+            <ul>
+                <li>
+                    <span>直接消费，无需美团券，携带所有入住人的有效身份证班里入住，入住必须按照一人一证</span>
+                </li>
+                <li>
+                    <span>请在14:00之后入住并与次日12:00之前退房；如需提前入住或延时退房，请咨询商家</span>
+                </li>
+                <li>
+                    <span>入住需要押金，金额以前台为准</span>
+                </li>
+            </ul>
+        </div>
+        <!--预定须知-->
+        <div class="detailModal-detailContent-item font14">
+            <div class="detailModal-rules-title">
+                <span>预定须知</span>
+            </div>
+            <ul>
+                <li>
+                    <span>如需发票，请先与酒店确认可开；酒店电话:021-3232323232</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!--酒店详情弹窗-->
+<div class="detailModal2" style="display: none;">
+	<div class="detailMoadl-showImg">
+        <img src="../../../images/hotel.jpg" alt="">
+    </div>
+    <div class="detailModal-header">
+        <!--标题-->
+        <div class="detailModal-header-title">
+            <div class="font18">豪华乐园景观双床房</div>
+            <span class="price font18">￥768</span>
+            <span class="originPrice font14">门市价: <del>￥1000</del></span>
+        </div>
+        <!--标识-->
+        <div class="detailModal-header-iconList flex-row font14">
+            <span class="iconlist-item">
+                <span class="flex-row"><img src="../../../images/2X_93.png" alt=""></span>
+                <span>无早</span>
+            </span>
+            <span class="iconlist-item">
+                <span class="flex-row"><img src="../../../images/2X_93.png" alt=""></span>
+                <span>双床</span>
+            </span>
+            <span class="iconlist-item">
+                <span class="flex-row"><img src="../../../images/2X_93.png" alt=""></span>
+                <span>有窗</span>
+            </span>
+            <span class="iconlist-item">
+                <span class="flex-row"><img src="../../../images/2X_93.png" alt=""></span>
+                <span>不可退改</span>
+            </span>
+        </div>
+        <!--退款规则-->
+        <div class="detailModal-rules font14">
+            <div class="detailModal-rules-title">
+                <span>退款规则</span>
+            </div>
+            <div class="detailModal-rules-desc font14">
+                <div>
+                    <img src="../../../images/times-icon.png" alt="">
+                    <span class="cancleTime">限时取消</span>
+                    <span>
+                        入住当天18点前可免费取消，逾期不可取消/变更，如未入住，酒店将扣除全额房费
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!--使用规则-->
+        <div class="detailModal-detailContent-item font14">
+            <div class="detailModal-rules-title">
+                <span>使用规则</span>
+            </div>
+            <ul>
+                <li>
+                    <span>直接消费，无需美团券，携带所有入住人的有效身份证班里入住，入住必须按照一人一证</span>
+                </li>
+                <li>
+                    <span>请在14:00之后入住并与次日12:00之前退房；如需提前入住或延时退房，请咨询商家</span>
+                </li>
+                <li>
+                    <span>入住需要押金，金额以前台为准</span>
+                </li>
+            </ul>
+        </div>
+        <!--预定须知-->
+        <div class="detailModal-detailContent-item font14">
+            <div class="detailModal-rules-title">
+                <span>预定须知</span>
+            </div>
+            <ul>
+                <li>
+                    <span>如需发票，请先与酒店确认可开；酒店电话:021-3232323232</span>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+      <!-- 底部支付栏 -->
+		<div class="flex-row space-between">
+		    <div>
+		        <span style="margin-left: 10px;">应付总额：</span>
+		        <span class="danger">￥234</span>
+		    </div>
+		    <div class="gopay layui-bg-red">
+		        <a href="../../payfor/payfor3.html">去支付</a>
+		    </div>
+		</div>
+</div>
+
+
+<script src="../../../scripts/rem.js"></script>
+<script src="../../../vendor/jquery.js"></script>
+<script src="../../../vendor/layui/layui.js"></script>
+<script src="../../../vendor/layer_mobile/layer.js"></script>
+<script src="../../../scripts/common.js"></script>
+<script src="../../../scripts/comlisdesc.js"></script>
+</body>
+</html>

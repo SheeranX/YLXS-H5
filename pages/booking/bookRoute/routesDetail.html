@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>线路详情</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../vendor/layui/css/layui.css">
+    <link rel="stylesheet" href="../../../vendor/layui/css/layui.mobile.css">
+    <link rel="stylesheet" href="../../../styles/global.css">
+    <link rel="stylesheet" href="../../../styles/comlisdesc.css">
+</head>
+<body>
+<div class="topbar bg-white height60 flex-row">
+    <div>
+        <span class="layui-icon layui-icon-left font20" onclick="back()"></span>
+    </div>
+    <div class="full-width txt-align-center">
+        <span class="font18">线路详情</span>
+    </div>
+</div>
+<div class="goodsDetail-container">
+    <div class="goodsDetail-showImage">
+        <!--顶部图片展示-->
+        <img class="banner" src="../../../images/line.jpeg" alt="">
+        <!--分享-->
+        <img class="share" src="../../../images/2X_03.png" alt="">
+    </div>
+
+    <div class="goodsDetail-header">
+        <!--标题-->
+        <div class="goodsDetail-header-item font14">
+            <h3>【两人下单立减600】丽江+泸沽湖+香格里拉巴士7日当地游</h3>
+            <span class="price font16" style="color: #E9536C;margin-top: 0.1rem;display: block;">￥765</span>
+        </div>
+
+        <div class="goodsDetail-header-item-flex">
+            <div class="goodsDetail-header-item-left">
+                <span class="font14" onclick="window.location.href='routesNotice.html'">购买须知</span>
+                <p class="font12">开放时间/优待政策</p>
+                <i class="layui-icon layui-icon-right"></i>
+            </div>
+            <div class="goodsDetail-header-item-right" onclick="window.location.href='./userComment.html'">
+                <span class="font14"><label class="goodComment font18">96.6%</label>好评率</span>
+                <p class="font12">来自1506位游客的真实点评</p>
+                <i class="layui-icon layui-icon-right"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="goodsDetail-body">
+        <div style="padding: 0 0.1rem;height: 0.4rem;line-height: 0.4rem;border-bottom: solid 1px #e3e3e3;">
+        	产品详情
+        </div>
+        <div style="padding: 0.1rem;">
+        	<h3 class="font14" style="margin-bottom: 0.1rem;">费用包含</h3>
+        	<p class="font12" style="color: #666666;line-height: 0.2rem;">1.直飞丽江往返机票</p>
+        	<p class="font12" style="color: #666666;line-height: 0.2rem;">2.私人专享往返接送机</p>
+        	<p class="font12" style="color: #666666;line-height: 0.2rem;">3.赠送拉市海一日游(含划船)</p>
+        	<p class="font12" style="color: #666666;line-height: 0.2rem;">4.酒店含双人早餐，小童不含早餐</p>
+        	<p class="font12" style="color: #666666;line-height: 0.2rem;">5.含二晚特色准四星丽江古城内客栈，如升级特色准五星客栈+580元/人(任意二晚入住均可)</p>
+        	<p class="font12" style="color: #666666;line-height: 0.2rem;">6.房型：标准双人间，酒店含早餐，不占床不含早餐</p>
+        </div>
+        <div style="height: 0.1rem;background: #EBEBF4;"></div>
+        <div style="padding: 0.1rem;margin-bottom: 0.4rem;">
+        	<h3 class="font14" style="margin-bottom: 0.1rem;">费用不含</h3>
+        	<p class="font12" style="color: #666666;">"旅游费用包含"内容以外的所有费用。</p>
+        </div>
+        <div onclick="window.location.href='routesOrder.html'" class="footer" style="padding-left: 0px!important;">
+        	<button style="width: 100%;height: 0.4rem;line-height: 0.4rem;color: white;text-align: center;background: #E9536C;border: none;">立即预定</button>
+        </div>
+    </div>
+</div>
+
+<!--酒店详情弹窗-->
+<div class="detailModal">
+    <div class="detailMoadl-showImg">
+        <img src="../../../images/line.jpeg" alt="">
+    </div>
+    <div class="detailModal-header">
+        <!--标题-->
+        <div class="detailModal-header-title">
+            <div class="font18">【两人下单立减600】丽江+泸沽湖+香格里拉巴士7日当地游</div>
+            <span class="price font18">￥768</span>
+            <span class="originPrice font14">门市价: <del>￥1000</del></span>
+        </div>
+        <!--标识-->
+        <div class="detailModal-header-iconList flex-row font14">
+            <span class="iconlist-item">
+                <span class="flex-row"><img src="../../../images/2X_93.png" alt=""></span>
+                <span>随时退</span>
+            </span>
+            <span class="iconlist-item">
+                <span class="flex-row"><img src="../../../images/2X_93.png" alt=""></span>
+                <span>无忧退换</span>
+            </span>
+            <span class="iconlist-item">
+                <span class="flex-row"><img src="../../../images/2X_93.png" alt=""></span>
+                <span>入园保证</span>
+            </span>
+        </div>
+        <!--退款规则-->
+        <div class="detailModal-rules font14">
+            <div class="detailModal-rules-title">
+                <span>退款规则</span>
+            </div>
+            <div class="detailModal-rules-desc font14">
+                <div>
+                    <img src="../../../images/times-icon.png" alt="">
+                    <span class="cancleTime">限时取消</span>
+                    <span>
+                        入住当天18点前可免费取消，逾期不可取消/变更，如未入住，酒店将扣除全额房费
+                    </span>
+                </div>
+            </div>
+        </div>
+        <!--使用规则-->
+        <div class="detailModal-detailContent-item font14">
+            <div class="detailModal-rules-title">
+                <span>使用规则</span>
+            </div>
+            <ul>
+                <li>
+                    <span>直接消费，无需美团券，携带所有入住人的有效身份证班里入住，入住必须按照一人一证</span>
+                </li>
+                <li>
+                    <span>请在14:00之后入住并与次日12:00之前退房；如需提前入住或延时退房，请咨询商家</span>
+                </li>
+                <li>
+                    <span>入住需要押金，金额以前台为准</span>
+                </li>
+            </ul>
+        </div>
+        <!--预定须知-->
+        <div class="detailModal-detailContent-item font14">
+            <div class="detailModal-rules-title">
+                <span>预定须知</span>
+            </div>
+            <ul>
+                <li>
+                    <span>如需发票，请先与酒店确认可开；酒店电话:021-3232323232</span>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+	<!-- 底部支付栏 -->
+	<div class="footer flex-row space-between">
+	    <div>
+	        <span>应付总额：</span>
+	        <span class="danger">￥234</span>
+	    </div>
+	    <div class="gopay layui-bg-red">
+	        <a href="../../payfor/payfor3.html">去支付</a>
+	    </div>
+	</div>     
+</div>
+
+
+<script src="../../../scripts/rem.js"></script>
+<script src="../../../vendor/jquery.js"></script>
+<script src="../../../vendor/layui/layui.js"></script>
+<script src="../../../vendor/layer_mobile/layer.js"></script>
+<script src="../../../scripts/common.js"></script>
+<script src="../../../scripts/comlisdesc.js"></script>
+</body>
+</html>

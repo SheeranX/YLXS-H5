@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Add to homescreen for Safari on iOS -->
+	<!-- 添加至主屏, 从主屏进入会隐藏地址栏和状态栏, 全屏(content="yes") -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <link rel="stylesheet" href="../../vendor/layui/css/layui.css">
+    <link rel="stylesheet" href="../../vendor/layui/css/layui.mobile.css">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/my.css">
+    <title>我的订单</title>
+   
+</head>
+<body>
+	<div class="topbar flex-row height60 bg-white">
+        <div>
+            <span class="layui-icon layui-icon-left font20" onclick="back()"></span>
+        </div>
+        <div class="full-width txt-align-center">
+            <span class="font18">我的订单</span>
+        </div>
+    </div>
+    <div class="content" style="top: 0.4rem;background: #ededf6;">
+    	<!--tab列表-->
+    	<div class="myOrder-tab flex-row space-around align-item-center height60">
+    		<div class="myOrder-tab-active">全部</div>
+    		<div>待支付</div>
+    		<div>待使用</div>
+    		<div>待评价</div>
+    	</div>
+    	<!--订单详情-->
+    	<div class="myOrder-detail">
+    		<!--景区-->
+    		<div class="myOrder-detail-views">
+    			<!--顾客信息-->
+	    		<div class="customerInfo">
+	    			<div class="views-div">
+	    				<span class="views">景区</span>
+	    				<i class="layui-icon layui-icon-right"></i>
+	    			</div>
+	    			<div>
+	    				<span>批次号&nbsp;20181225</span>
+	    				<span>已支付</span>
+	    			</div>
+	    			<div>
+	    				<label>张大大&nbsp;&nbsp;|&nbsp;&nbsp;15607998469</label>
+	    				<span>2018-12-25 13:28:36</span>
+	    			</div>
+	    		</div>
+	    		<!--票种信息-->
+	    		<div class="ticketInfo">
+	    			<div>
+	    				<span>订单号&nbsp;20181225132836</span>
+	    				<span>已使用</span>
+	    			</div>
+	    			<div>
+	    				<label style="color: #209EF6;">济南野生动物世界年卡</label>
+	    				<label>￥358.00</label>
+	    			</div>
+	    			<div>
+	    				<label>成人年卡</label>
+	    				<span>x1</span>
+	    			</div>
+	    		</div>
+	    		<!--剩余内容-->
+	    		<div class="surplus-Info">
+	    			<div class="ticketInfo">
+		    			<div>
+		    				<span>订单号&nbsp;20181225132836</span>
+		    				<span>已使用</span>
+		    			</div>
+		    			<div>
+		    				<label style="color: #209EF6;">济南野生动物世界年卡</label>
+		    				<label>￥358.00</label>
+		    			</div>
+		    			<div>
+		    				<label>成人年卡</label>
+		    				<span>x1</span>
+		    			</div>
+		    		</div>
+		    		<div class="ticketInfo">
+		    			<div>
+		    				<span>订单号&nbsp;20181225132836</span>
+		    				<span>已使用</span>
+		    			</div>
+		    			<div>
+		    				<label style="color: #209EF6;">济南野生动物世界年卡</label>
+		    				<label>￥358.00</label>
+		    			</div>
+		    			<div>
+		    				<label>成人年卡</label>
+		    				<span>x1</span>
+		    			</div>
+		    		</div>
+		    		<div class="ticketInfo">
+		    			<div>
+		    				<span>订单号&nbsp;20181225132836</span>
+		    				<span>已使用</span>
+		    			</div>
+		    			<div>
+		    				<label style="color: #209EF6;">济南野生动物世界年卡</label>
+		    				<label>￥358.00</label>
+		    			</div>
+		    			<div>
+		    				<label>成人年卡</label>
+		    				<span>x1</span>
+		    			</div>
+		    		</div>
+	    		</div>
+	    		<!--显示剩余-->
+	    		<div class="showSurplus">
+	    			<span>显示剩余<label>3</label>件</span>
+	    			<i class="layui-icon layui-icon-down"></i>
+	    		</div>
+    		</div>
+    		<div style="height: 0.1rem;background: #ededf6;"></div>
+    		<!--酒店-->
+    		<div class="myOrder-detail-hotel">
+    			<!--顾客信息-->
+	    		<div class="customerInfo">
+	    			<div class="views-div">
+	    				<span class="hotel">酒店</span>
+	    				<i class="layui-icon layui-icon-right"></i>
+	    			</div>
+	    			<div>
+	    				<span>批次号&nbsp;20181225</span>
+	    				<span>已支付</span>
+	    			</div>
+	    			<div>
+	    				<label>张大大&nbsp;&nbsp;|&nbsp;&nbsp;15607998469</label>
+	    				<span>2018-12-25 13:28:36</span>
+	    			</div>
+	    		</div>
+	    		<!--票种信息-->
+	    		<div class="ticketInfo">
+	    			<div>
+	    				<span>订单号&nbsp;20181225132836</span>
+	    				<span>已使用</span>
+	    			</div>
+	    			<div>
+	    				<label style="color: #209EF6;">济南野生动物世界年卡</label>
+	    				<label>￥358.00</label>
+	    			</div>
+	    			<div>
+	    				<label>成人年卡</label>
+	    				<span>x1</span>
+	    			</div>
+	    		</div>
+	    		<div class="ticketInfo">
+	    			<div>
+	    				<span>订单号&nbsp;20181225132836</span>
+	    				<span>已使用</span>
+	    			</div>
+	    			<div>
+	    				<label style="color: #209EF6;">济南野生动物世界年卡</label>
+	    				<label>￥358.00</label>
+	    			</div>
+	    			<div>
+	    				<label>成人年卡</label>
+	    				<span>x1</span>
+	    			</div>
+	    		</div>
+	    		<div class="ticketInfo">
+	    			<div>
+	    				<span>订单号&nbsp;20181225132836</span>
+	    				<span>已使用</span>
+	    			</div>
+	    			<div>
+	    				<label style="color: #209EF6;">济南野生动物世界年卡</label>
+	    				<label>￥358.00</label>
+	    			</div>
+	    			<div>
+	    				<label>成人年卡</label>
+	    				<span>x1</span>
+	    			</div>
+	    		</div>
+    		</div>
+    	</div>
+    </div>	
+    <script src="../../scripts/rem.js"></script>
+    <script src="../../vendor/jquery.js"></script>
+    <script src="../../vendor/layui/layui.js"></script>
+    <script src="../../vendor/layer_mobile/layer.js"></script>
+    <script src="../../scripts/common.js"></script>
+    <script>
+    	layui.use(['rate'], function(){
+		  var rate = layui.rate;
+		  //基础效果
+		  rate.render({
+		    elem: '#myScore1',
+		    value:5,
+		    readonly: true,
+		    theme: '#FF7c43'
+		  })
+		  
+		  rate.render({
+		    elem: '#myScore2',
+		    value:3,
+		    readonly: true,
+		    theme: '#FF7c43'
+		  })
+		})  
+		
+		//删除评价内容
+		$(function(){
+			$(".myDelete").click(function(){
+				$(this).parent().parent().remove();
+			})
+		})
+		//tab列表激活
+		$(".myOrder-tab div").click(function(){
+			$(this).addClass("myOrder-tab-active").siblings().removeClass("myOrder-tab-active")
+		})
+		//剩余状态控制
+		$(".showSurplus").click(function(){
+			if($(".showSurplus i").hasClass("layui-icon-down")){
+				$(".showSurplus i").removeClass("layui-icon-down");
+				$(".showSurplus i").addClass("layui-icon-up");
+				$(".surplus-Info").slideDown(500,function(){
+					$(".surplus-Info").css("display","block");
+				})
+				$(".showSurplus span").html("收起")
+			}else{
+				$(".showSurplus i").removeClass("layui-icon-up");
+				$(".showSurplus i").addClass("layui-icon-down");
+				$(".surplus-Info").slideUp(500,function(){
+					$(".surplus-Info").css("display","none");
+				})
+				$(".showSurplus span").html("显示剩余3件")
+			}
+		})
+		//跳转到详情页
+		$(".customerInfo").click(function(){
+			window.location.href='myOrderDetail.html';
+		})
+		$(".ticketInfo").click(function(){
+			window.location.href='myOrderDetail.html';
+		})
+		
+    </script>
+</body>
+</html>

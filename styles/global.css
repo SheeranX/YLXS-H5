@@ -1,0 +1,219 @@
+
+html,body{
+    background: #ededed;
+    height: 100%;
+    width: 100%;
+    /*position: fixed;*/
+}
+input[type="text"]{
+    -webkit-appearance: none!important; 
+    outline: none;
+}
+.font10{
+    font-size: 0.10rem;
+}
+.font12{
+    font-size: 0.12rem;
+}
+.font14{
+    font-size: 0.14rem;
+}
+.font16{
+    font-size: 0.16rem;
+}
+.font18{
+    font-size: 0.18rem;
+}
+.font20{
+    font-size: 0.20rem;
+}
+.font28{
+    font-size: 0.28rem;
+}
+.warning{
+    color: #FFB800;
+}
+.danger{
+    color: #e9536c;
+}
+.info{
+    color: #3879D4;
+}
+.success{
+    color: #009688;
+}
+.disabled{
+    color: #c2c2c2;
+}
+.bg-white{
+    background: #fff;
+}
+.layui-bg-red{
+    background: #e9536c!important;
+}
+.layui-btn-danger{
+    background-color:#e9536c!important;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+}
+.space-around{
+    justify-content: space-around;
+}
+.space-between{
+    justify-content: space-between;
+}
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.item-center{
+    justify-content: center;
+}
+.txt-align-center {
+    text-align: center;
+  }
+
+.txt-align-right {
+    text-align: right;
+  }
+
+.txt-align-left {
+    text-align: left;
+  }
+.align-item-center{
+    align-items: center;
+}
+.contetn-center{
+    justify-content: center;
+}
+.padding-between{
+    padding: 0 0.15rem;
+}
+.padding-btm{
+    padding-bottom: 0.1rem;
+}
+.padding-vertical{
+    padding: 0.10rem 0;
+}
+.margin-top50{
+    margin-top: 0.5rem;
+}
+
+.margin-top10{
+    margin-top: 0.1rem;
+}
+.padding-top{
+    padding-top: 0.1rem;
+}
+.height60{
+    height: 0.6rem;
+}
+.height40{
+    height: 0.4rem;
+}
+.height20{
+    height: 0.2rem;
+}
+.width40{
+    width: 0.4rem;
+}
+.width80{
+    width: 1rem; 
+}
+.full-width{
+    width: 100%;
+}
+.full-height{
+    height: 100%;
+}
+.topbar{
+    position: fixed;
+    width: 100%;
+    height: 0.4rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid #f5f5f5;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .09);
+    z-index: 99;
+}
+
+.btm-wired{
+    border-bottom: 1px solid #ccc;
+}
+
+.modal .layui-laydate, .layui-laydate-hint{
+    border:transparent;
+    box-shadow:none;
+    width: 100%;
+}
+.modal .layui-laydate-static{
+    width: 100%;
+}
+.modal .layui-laydate-main{
+    width: 100%;
+}
+.modal .layui-laydate-content table{
+    width: 100%;
+}
+.footer{
+    height: 0.4rem;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+    bottom: 0;
+    padding-left: 0.1rem;
+    border-top: 1px solid #ededed;
+    z-index: 999;
+    box-sizing: border-box;
+}
+
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.content{
+    position: fixed;
+    top: 0.4rem;
+    bottom: 0.4rem;
+    left: 0;
+    right: 0;
+    overflow: auto;
+}
+.mobile-input{
+    border: transparent;
+    height: 0.38rem;
+}
+.dialog{
+    border-radius: 5px;
+}
+.dialog>div{
+    height: 0.5rem;
+    background: #fff;
+    line-height: 0.5rem;
+}
+.layui-laydate{
+    font-size: 0.14rem!important;
+}
+.layui-laydate .layui-this{
+    border-radius: 10px;
+    background: #e9536c!important;
+}
+
+.layui-laydate .layui-this span{
+    color: #fff!important;
+}
+.layui-m-layer-footer .layui-m-layercont{
+    padding: 0!important;
+}
+.layui-laydate-header i:hover, .layui-laydate-header span:hover{
+    color: #e9536c!important;
+}
+.layui-laydate-header i{
+    font-size: 0.12rem!important;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- Add to homescreen for Safari on iOS -->
+	<!-- 添加至主屏, 从主屏进入会隐藏地址栏和状态栏, 全屏(content="yes") -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <link rel="stylesheet" href="../../vendor/layui/css/layui.css">
+    <link rel="stylesheet" href="../../vendor/layui/css/layui.mobile.css">
+    <link rel="stylesheet" href="../../styles/global.css">
+    <link rel="stylesheet" href="../../styles/index.css" />
+    <link rel="stylesheet" href="../../styles/intoLiJiang.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+    <title>旅游攻略</title>
+    
+</head>
+<body>
+    <div class="topbar flex-row height60 bg-white">
+        <div>
+            <span class="layui-icon layui-icon-left font20" onclick="back()"></span>
+        </div>
+        <div class="full-width txt-align-center">
+            <span class="font18">旅游攻略</span>
+        </div>
+    </div>
+    <div class="content" style="bottom: 0;">
+    	<!--顶部广告图-->
+    	<div class="top-banner">
+    		<a class="banner-item" href='self-drivingTravel.html' target="_parent">
+    			<img src="../../images/self-driving-travelling.png" />
+    			<span>自驾游指南</span>
+    			<label>
+    				纳西妈妈说：
+    				<p style="text-indent: 2em;">丽江非常适合自驾游</p>
+    			</label>
+    		</a>
+    		<a class="banner-item" href='independentTravel.html' target="_parent">
+    			<img src="../../images/independent-travel.png" />
+    			<span>自由行指南</span>
+    			<label>
+    				一种更酷更新的游玩方式
+    				<p style="text-indent: 4em;">---徒步玉龙雪山</p>
+    			</label>
+    		</a>
+    	</div>
+    	<!--注意事项-->
+    	<div class="attentions">
+    		<div class="attentions-header" style="display: flex;">
+    			<h3>注意事项</h3>
+    			<label>你必须知道的事</label>
+    		</div>
+    		<div class="attentions-body">
+    			<!--注意事项轮播-->
+    			<div class="swiper-container">
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide">
+				        	<div class="attentions-item">
+			    				<img src="../../images/face-icon.png" />
+			    				<label>人脸识别</label>
+			    				<P>
+			    					人脸识别，是基于人的脸部特征信息进行身份识别的一种生物识别技术。用摄像机或摄像头采集含有人脸的图像或视频流，
+			    					并自动在图像中检测和跟踪人脸，进而对检测到的人脸进行脸部识别的一系列相关技术，通常也叫做人像识别、面部识别。
+			    				</P>
+			    			</div>
+				        </div>
+				        <div class="swiper-slide">
+				        	<div class="attentions-item">
+			    				<img src="../../images/notice-icon.png" />
+			    				<label>景区公告</label>
+			    				<P>
+			    					丽江市玉龙雪山景区是国家旅游局正式批准的5A级国家风景名胜区。位于玉龙纳西族自治县境内，是北半球最南的大雪山。
+			    					南北长35公里，东西宽13公里，面积960平方公里，主峰扇子陡海拔5596米，高山雪域风景位于海拔4000米以上，拥有险、奇、美、秀的景色。
+			    				</P>
+			    			</div>
+				        </div>
+				        <div class="swiper-slide">
+				        	<div class="attentions-item">
+			    				<img src="../../images/tips-icon.png" />
+			    				<label>购票须知</label>
+			    				<P>
+			    					大玉龙套票（通票）：220元/人包含的景区费用有：进山费105，玉水寨4A级，东巴谷3A级，玉柱擎天2A级，东巴万神园2A级，
+			    					东巴王国2A，玉峰寺，白沙壁画，共7个点。推荐去东巴谷、玉水寨和玉峰寺。如果你觉得一天游玩不完，你可以去售票处登记下，
+			    					第二天继续游玩，不然进山费是当天有效！
+			    				</P>
+			    			</div>
+				        </div>
+				    </div> 
+				    <!-- 如果需要导航按钮 -->
+				    <div class="swiper-button-prev"></div>
+				    <div class="swiper-button-next"></div>
+				</div>
+    		</div>
+    	</div>
+    	<!--发布游记-->
+    	<div class="travels">
+    		<!--tab列表-->
+    		<div class="travels-tab">
+    			<div class="travels-tab-active">推荐游记</div>
+    			<label>|</label>
+    			<div>最新游记</div>
+    			<a href='travelNotes.html' target="_parent">
+    				<img src="../../images/write.png" />
+    				写游记
+    			</a>
+    		</div>
+    		<!--tab内容-->
+    		<div class="travels-content">
+    			<a class="travels-content-active" href='travelDetail.html' target="_parent">
+    				<img src="../../images/index-carousel04.png" />
+    				<span>停留在泸沽湖&nbsp;又带着婚纱去彩云之南</span>
+    			</a>
+    			<a href='travelDetail.html' target="_parent">
+    				<img src="../../images/index-carousel05.png" />
+    				<span>停留在泸沽湖&nbsp;又带着婚纱去彩云之南</span>
+    			</a>
+    		</div>
+    	</div>
+    </div>	
+    <script src="../../scripts/rem.js"></script>
+    <script src="../../vendor/jquery.js"></script>
+    <script src="../../vendor/layui/layui.js"></script>
+    <script src="../../vendor/layer_mobile/layer.js"></script>
+    <script src="../../scripts/common.js"></script>
+    <script src="../../scripts/index.js"></script>
+    <script src="../../scripts/comlisdesc.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+    <script>
+    	
+    	 var mySwiper = new Swiper ('.swiper-container', {
+		    loop: true, // 循环模式选项
+		    autoplay:true, //自动切换
+		    
+		    // 如果需要前进后退按钮
+		    navigation: {
+		      nextEl: '.swiper-button-next',
+		      prevEl: '.swiper-button-prev',
+		    },
+		    
+		  })        
+    	
+    	$(function(){
+    		$(".travels-tab div").each(function(i){
+    			$(".travels-tab div").eq(i).click(function(){
+    				$(".travels-tab div").eq(i).addClass("travels-tab-active").siblings().removeClass("travels-tab-active");
+    				$(".travels-content a").eq(i).addClass("travels-content-active").siblings().removeClass("travels-content-active")
+    			})
+    		})
+    	})
+    </script>
+</body>
+</html>

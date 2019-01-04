@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../vendor/layui/css/layui.css">
+    <link rel="stylesheet" href="../../../vendor/layui/css/layui.mobile.css">
+    <link rel="stylesheet" href="../../../styles/global.css">
+    <link rel="stylesheet" href="../../order/order.css">
+    <title>订单填写</title>
+</head>
+
+<body>
+    <div class="topbar flex-row height60 bg-white">
+        <div>
+            <span class="layui-icon layui-icon-left font20" onclick="back()"></span>
+        </div>
+        <div class="full-width txt-align-center">
+            <span class="font18">订单填写</span>
+        </div>
+    </div>
+    <div class="content">
+        <div class="order-content flex-column margin-top10 padding-between bg-white">
+            <!-- 标题说明及购买须知 -->
+            <div class="flex-row height40 space-between font14 btm-wired font14">
+                <div class="order-title">5596特色法式怀石料理儿童单人套餐</div>
+                <div class="danger" id="purchaseRemind">
+                    <span>购买须知</span><span class="layui-icon layui-icon-right"></span>
+                </div>
+            </div>
+            <!-- 日期部分展示及选择 -->
+            <div class="date-list btm-wired">
+                <p class="font16 padding-top">使用日期</p>
+                <div class="flex-row space-around txt-align-center">
+                    <div class="radio-item">
+                        <input type="radio" value="" name="date" id="day1" disabled>
+                        <label for="day1" class="disabled">
+                            <span class="font12">今天03-28</span>
+                            <span class="font12">不可订</span>
+                        </label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" value="" name="date" id="day2" checked>
+                        <label for="day2">
+                            <span class="font12">明天03-28</span>
+                            <span class="danger font12">¥123.00</span>
+                            <span class='info font12'>剩余 123</span>
+                        </label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" value="" name="date" id="day3">
+                        <label for="day3">
+                            <span class="font12">后天03-28</span>
+                            <span class="danger font12">¥123.00</span>
+                            <span class='info font12'>剩余 123</span>
+                        </label>
+                    </div>
+                    <div class="radio-item">
+                        <input type="radio" value="" name="date" id="day4">
+                        <label for="day4" class="danger" id="moreDate">
+                            <span class="font12">更多日期</span>
+                            <span class="font12">￥122 起</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <!-- 数量选择 -->
+            <div class="flex-row space-between height60 btm-wired">
+                <p class="font16">购买数量</p>
+                <div class="plus-mins">
+                    <span class="minus info minus-active">-</span>
+                    <input type="tel" value="1" class="input-num" pattern="" />
+                    <span class="plus info">+</span>
+                </div>
+            </div>
+            <!-- 商品说明性文字 -->
+            <div class="padding-vertical">
+                <p class="font12">3月29日当日使用有效</p>
+                <p class="info font14">此日期产品在2018年06月27日 00:00:00 前可退款</p>
+            </div>
+        </div>
+        <!-- 订单信息 -->
+        <div class="flex-column margin-top10 padding-between bg-white">
+            <p class="padding-vertical btm-wired font16">订单信息</p>
+            <div class="flex-row space-between">
+                <div class="padding-top">
+                    <p>取餐人信息</p>
+                    <p>需<span class="danger">1位</span>出行游客信息，用于取餐使用</p>
+                </div>
+                <div>
+                    <span class="layui-icon layui-icon-username font20 info"></span>
+                </div>
+            </div>
+            <div class="flex-column user-form">
+                <div class="flex-row height40">
+                    <label for="" class="font14">姓名</label>
+                    <input type="text" placeholder="取票人姓名" class="full-width">
+                </div>
+                <div class="flex-row height40">
+                    <label for="" class="font14">手机号</label>
+                    <input type="tel" placeholder="用户接受订单信息" class="full-width">
+                </div>
+                <div class="flex-row height40">
+                    <label for="" class="font14">备注</label>
+                    <input type="text" placeholder="订单备注" class="full-width">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部支付栏 -->
+    <div class="footer flex-row space-between">
+        <div>
+            <span>应付总额：</span>
+            <span class="danger">￥234</span>
+        </div>
+        <div class="gopay layui-bg-red">
+            <a href="../../payfor/payfor4.html">去支付</a>
+        </div>
+    </div>
+    <script src="../../../scripts/rem.js"></script>
+    <script src="../../../vendor/jquery.js"></script>
+    <script src="../../../vendor/layui/layui.js"></script>
+    <script src="../../../vendor/layer_mobile/layer.js"></script>
+    <script src="../../../scripts/common.js"></script>
+    <script src="../../../pages/order/order.js"></script>
+</body>
+
+</html>
